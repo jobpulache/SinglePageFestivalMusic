@@ -1,0 +1,15 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --dark-grey: #333;
+    --light-grey: #666;
+    --blue: #007bff;
+    --red: #dc3545;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --principalFont: "Ga Maamli", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
