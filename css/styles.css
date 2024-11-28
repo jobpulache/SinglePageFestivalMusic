@@ -10,6 +10,64 @@
     --principalFont: "Ga Maamli", sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
+    width: min(95%, 120rem);
     margin: 0 auto;
 }
+
+header {
+    background-color: var(--blue);
+    font-family: var(--principalFont);
+}
+
+@media(min-width: 768px) {
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.nav-header {
+
+    color: var(--white);
+    margin: 0 auto;
+    padding: 0 6rem;
+    font-size: 1.2rem;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 3rem;
+}
+
+@media(max-width: 480px) {
+    .navegacion {
+        padding: 1rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.navegacion>a {
+    color: var(--white);
+    margin-right: 2rem;
+
+    &:hover {
+        color: var(--yellow);
+    }
+}
+
+/* Main */
