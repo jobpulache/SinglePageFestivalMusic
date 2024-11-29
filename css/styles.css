@@ -8,6 +8,7 @@
     --yellow: #ffc107;
     --green: #28a745;
     --principalFont: "Ga Maamli", sans-serif;
+    --secundaryFont: "Arial Black", Gadget, sans-serif;
 }
 
 body {
@@ -175,10 +176,87 @@ header {
 }
 
 /*LineUp*/
-#lineUp {
+.lineUp {
     background-color: var(--red);
-    margin-top: 2rem;
 }
-.subtitle-lineUp{
- 
+
+.subtitle-lineUp {
+    color: var(--white);
+    text-align: center;
+    font-size: 5rem;
+    font-family: var(--secundaryFont);
+    font-weight: 900;
+}
+
+.dia {
+    color: var(--white);
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.escenarios-contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+    .escenarios-contenedor {
+        display: grid;
+        grid-template-columns: 2, 5rem;
+    }
+
+}
+
+.escenario {
+    padding-top: 2rem;
+}
+
+.nombre-escenario {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.calendario {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 2.5rem;
+    font-weight: 700;
+    background-color: var(--light-grey);
+    margin-top: 1rem;
+}
+
+
+.listaLineUp {
+    font-weight: 400;
+}
+.sunday{
+    margin-top: 1rem;
+}
+
+.bg-amarillo {
+    background-color: var(--yellow);
+}
+
+
+.bg-verde {
+    background-color: var(--green);
+
+    /* :nth-child(odd) {
+        background-color: lighten(var(--green), 20%);
+    } */
+
+}
+
+.bg-verde,
+.bg-amarillo {
+    margin-top: 2rem;
 }
