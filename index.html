@@ -16,7 +16,7 @@
 
 <body>
     <header class="">
-        <div class=" nav-header">
+        <div class="container nav-header">
             <h1> <a class="logo" href="/">Music Festival and Concerts</a></h1>
             <nav class="navegacion">
                 <a href="#">LineUp</a><!--Pongase en fila-->
@@ -29,14 +29,54 @@
     <main class="main-index">
         <div class="video">
             <div class="overlay">
-                <div class="container container-video">
-                    <h2>Welcome to Our Festival, It's a great time to enjoy music </h2>
-                    <p>July 15th, Piura, Perú 2024</p>
+                <div class=" container-video">
+                    <h2 class="subtitle">Welcome Festival, It's a great time to enjoy music </h2>
+                    <p class="direction"> July 15th, Piura, Perú 2024</p>
                 </div>
             </div>
-            <video src=""></video>
+            <video autoplay muted loop class="video-dj">
+                <source src="video/dj.mp4" type="video/mp4">
+                <source src="video/dj.ogv" type="video/oog">
+                <source src="video/dj.webm" type="video/webm">
+            </video>
         </div>
     </main>
+
+    <section class="sobre-festival container">
+        <center>
+            <div class="imagen-dj">
+                <picture>
+                    <source src="img/imagen-dj.avif" type="image/avif">
+                    <source src="img/imagen-dj.webp" type="image/webp">
+                    <img class="imagen" src="img/imagen_dj.jpg" alt="Image DJ" loading="lazy" height="300" width="350">
+                </picture>
+            </div>
+        </center>
+        <div class="contenido-festival">
+            <h2 class="subtitle-festival">The best Festival the Perú</h2>
+            <p class="fecha">July 15th, Piura, Perú 2024</p>
+            <p>Without wasting time to enjoy the music, the best festival in the country.</p>
+        </div>
+    </section>
+
+
+    <section class="lineUp" id="lineUp">
+        <h3 class="subtitle-lineUp">Line Up</h3>
+        <p class="dia">Monday 15th</p>
+        <div class="escenarios-contenedor">
+            <div class="bg-amarillo escenario">
+                <p class="nombre-escenario"> English Music</p>
+                <ul class="calendario">
+                    <li>12: 00 AM | <span>Manu Rios</span></li>
+                    <li>12: 00 AM | <span>Manu Rios</span></li>
+                    <li>12: 00 AM | <span>Manu Rios</span></li>
+                    <li>12: 00 AM | <span>Manu Rios</span></li>
+                    <li>12: 00 AM | <span>Manu Rios</span></li>
+                    <li>12: 00 AM | <span>Manu Rios</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
 </body>

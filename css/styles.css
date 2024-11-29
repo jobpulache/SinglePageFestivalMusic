@@ -19,55 +19,166 @@ a {
 }
 
 .container {
-    width: min(95%, 120rem);
+    min-width: 20%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 header {
     background-color: var(--blue);
-    font-family: var(--principalFont);
-}
-
-@media(min-width: 768px) {
-    .nav-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 }
 
 .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--principalFont);
 
-    color: var(--white);
-    margin: 0 auto;
-    padding: 0 6rem;
-    font-size: 1.2rem;
 }
 
 .logo {
-    color: var(--white);
-    font-size: 3rem;
-}
-
-@media(max-width: 480px) {
-    .navegacion {
-        padding: 1rem 0;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-
-.navegacion>a {
-    color: var(--white);
-    margin-right: 2rem;
+    font-size: 2.6rem;
+    text-align: center;
 
     &:hover {
         color: var(--yellow);
     }
 }
 
+.navegacion a {
+    margin: 0 15px;
+
+    &:hover {
+        color: var(--yellow);
+    }
+}
+
+.navegacion>a,
+.logo {
+    color: var(--white);
+}
+
+/*mq*/
+@media(max-width:768px) {
+    .nav-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .navegacion a {
+        margin: 10px 0;
+    }
+
+}
+
 /* Main */
+.video {
+    position: relative;
+    min-height: 20rem;
+    max-height: 30rem;
+    overflow: hidden;
+
+}
+
+@media(min-width: 480px) {
+    .nav-header {
+        width: 100%;
+    }
+}
+
+.video-dj {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    object-position: center;
+}
+
+
+.overlay {
+    position: absolute;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(45, 22, 175, 0.5)), url(../img/dj.jpg);
+    inset: 0;
+    /* Esto hace que el video se repita en el fondo */
+    display: flex;
+    align-items: center;
+}
+
+.video {
+    display: block;
+    width: auto;
+}
+
+@media(min-width: 768px) {
+    .video {
+        width: 100%;
+    }
+
+    .container-video {
+        z-index: 10;
+        margin: 0 3rem;
+    }
+
+}
+
+
+
+.subtitle,
+.direction {
+    color: var(--white);
+    font-size: 3rem;
+    margin: 0 .4rem;
+    font-weight: 900;
+    font-family: var(--principalFont);
+
+
+}
+
+.direction {
+    background-color: var(--red);
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 1rem 0;
+    width: 22rem;
+
+}
+
+/*About Festival*/
+
+.imagen {
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-festival {
+    margin-top: 2rem;
+}
+
+.subtitle-festival {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: var(--principalFont);
+    letter-spacing: 2px;
+
+}
+
+.fecha {
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/*LineUp*/
+#lineUp {
+    background-color: var(--red);
+    margin-top: 2rem;
+}
+.subtitle-lineUp{
+ 
+}
