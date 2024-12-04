@@ -14,10 +14,14 @@
 body {
     margin: 0;
 }
+.text-center{
+    text-align: center;
+}
 
 a {
     text-decoration: none;
 }
+
 
 .container {
     min-width: 20%;
@@ -87,6 +91,7 @@ header {
     overflow: hidden;
 
 }
+
 
 @media(min-width: 480px) {
     .nav-header {
@@ -215,7 +220,7 @@ header {
 }
 
 .nombre-escenario {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -229,14 +234,15 @@ header {
 
 li {
     padding: 2.5rem;
+    font-size: 1.6rem;
     font-weight: 700;
     background-color: var(--light-grey);
-    margin-top: 1rem;
+    margin-top: .4rem;
 }
 
 
 .listaLineUp {
-    font-weight: 400;
+    font-weight: 900;
 }
 .sunday{
     margin-top: 1rem;
@@ -244,6 +250,10 @@ li {
 
 .bg-amarillo {
     background-color: var(--yellow);
+}
+.bg-amarillo, .bg-verde{
+    width: 80%;
+    margin: 0 10%;
 }
 
 
@@ -259,4 +269,10 @@ li {
 .bg-verde,
 .bg-amarillo {
     margin-top: 2rem;
+}
+/*Section gallery imagenes*/
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: .5rem;
 }
