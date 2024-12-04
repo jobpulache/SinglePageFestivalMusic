@@ -14,14 +14,17 @@
 body {
     margin: 0;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
 
 a {
     text-decoration: none;
 }
-
+li{
+    list-style: none;
+}
 
 .container {
     min-width: 20%;
@@ -244,14 +247,17 @@ li {
 .listaLineUp {
     font-weight: 900;
 }
-.sunday{
+
+.sunday {
     margin-top: 1rem;
 }
 
 .bg-amarillo {
     background-color: var(--yellow);
 }
-.bg-amarillo, .bg-verde{
+
+.bg-amarillo,
+.bg-verde {
     width: 80%;
     margin: 0 10%;
 }
@@ -270,9 +276,63 @@ li {
 .bg-amarillo {
     margin-top: 2rem;
 }
+
 /*Section gallery imagenes*/
 .galeria-imagenes {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: .5rem;
+    position: relative;
+}
+
+/*Section Boletos*/
+#boletos {
+    background-color: #007bff
+}
+.content-global{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-global > h3, p{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: var(--secundaryFont);
+    text-align: center;
+}
+.content-global  .card-include header {
+    background-color: var(--red);
+    text-align: center;
+    padding: 1.3rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--white);
+
+}
+.content-global  .card-include .list-card-include{
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content-global .card-include-content{
+    background-color: var(--white);
+    width: 63rem;
+
+}
+.content-global .card-include-content .price-button{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    border: 0;
+    padding: 1rem;
+
 }
